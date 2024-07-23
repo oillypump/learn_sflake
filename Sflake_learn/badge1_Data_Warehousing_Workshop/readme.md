@@ -38,3 +38,5 @@ Don't sign up for a trial account until you are given step-by-step instructions 
 [Lesson 2 : Identity And Access](lesson2_Identity_And_Access/readme.md)
 
 [Lesson 3 : Data Containers](lesson3_Data_Containers/readme.md)
+
+[Lesson 4 : Tables, Data Types, and Loading Data](lesson4_Tables_Data_Types_and_Loading_Data/readme.md)
