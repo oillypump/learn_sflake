@@ -1,5 +1,7 @@
 # Badge 1: Data Warehousing Workshop 
 
+[up](../../README.md) 
+
 ## Hands-On Essentials Series
 This course is the first in the Hands On Essentials Series. This series allows you to earn a Badge for display on LinkedIn and other social media. The Essentials Series uses active learning principles to give you a fast paced, hands on experience. Short videos, step-by-step labs, reflection questions, and challenge labs work together to build your knowledge and skills as you build a solution.
 
@@ -30,7 +32,6 @@ Don't sign up for a trial account until you are given step-by-step instructions 
 - Querying Nested Semi-Structured Data
 
 
-[up](../../README.md) 
 
 [Lesson 1 : Getting Set Up](lesson1_Getting_Set_Up/readme.md)
 
