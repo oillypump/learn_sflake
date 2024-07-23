@@ -201,3 +201,5 @@ Can switch between roles on the HOME page
 Can see and use the COMPUTE_WH warehouse while in the SYSADMIN role
 Can name the first rule of troubleshooting in Snowflake ("Check your ____")  "ROLES"
 You are ready for Lesson 3!
+
+
