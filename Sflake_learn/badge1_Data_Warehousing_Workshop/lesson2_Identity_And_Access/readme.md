@@ -101,7 +101,103 @@ If two ROLES are linked by a blue line:
 >![create_db2](../../pics/Screenshot%202024-07-23%20110737.png)
 
 ### 🥋 Switch Your System Role to SYSADMIN
- steps for creating a database
-![steps for creating a database](image.png)
+
+> ![steps for creating a database](../../pics/stepsforcreatingadatabase.png)
 
 >You may need to refresh the browser tab to see the role change effects. You may also see a "Body can't be empty" message because you are on a database that the SYSADMIN can't see as soon as you change the role.
+
+
+## Explore Your New Database
+
+### 🥋 Switch Your System Role Back to ACCOUNTADMIN
+> ![new_db](../../pics/new_db.png)
+
+>You may need to refresh the browser tab to make sure the role change has taken effect. 
+
+### 🥋 Explore the Database You Created
+
+> ![explore_db](../../pics/explore_db.png)
+
+> Databases are used to group datasets (tables) together. A second-level organizational grouping, within a database, is called a schema. Every time you create a database, Snowflake will automatically create two schemas for you.
+
+> The INFORMATION_SCHEMA schema holds a collection of views.  The INFORMATION_SCHEMA schema cannot be deleted (dropped), renamed, or moved.
+
+> The PUBLIC schema is created empty and you can fill it with tables, views and other things over time. The PUBLIC schema can be dropped, renamed, or moved at any time.  
+
+## 🥋 Transfer Ownership of Your Database to the SYSADMIN Role
+
+### 🥋 Transfer Ownership of Your Database to the SYSADMIN Role
+
+> ![trf_ownerDB](../../pics/trf_ownerDB.png)
+>
+> ![trf_ownerDB1](../../pics/trf_ownerDB1.png)
+
+### 🥋 Switch Your System Role Back to SYSADMIN
+
+>![switch_role](../../pics/switch_role.png)
+
+> You will likely want to refresh the browser tab after changing roles each time. 
+
+## Ownership Challenge
+
+> This is a Challenge Lab! Challenge Labs are different from other labs because we don't give you the step-by-step instructions. Instead, we give you the end goal and expect you to use the skills you learned in earlier labs to complete the work. Challenge labs are required. 
+
+> Good Luck!
+
+```
+grant ownership on schema public to role SYSADMIN; 
+```
+
+## 🎯 Role, Creation, & Ownership Challenge Lab!
+
+###  🎯 Create a New Database Called UTIL_DB
+
+>Create a new database and name it UTIL_DB. This database and the PUBLIC schema should be owned by SYSADMIN.
+
+> HINT: If you set your role to SYSADMIN before you create the database, it will automatically be owned by SYSADMIN. You won't have to do any transfers of ownership. If you forget to set your role to SYSADMIN before creating the UTIL_DB, you will need to transfer ownership to SYSADMIN. 
+
+#### Does Your Databases Page Look Like This, Now?
+>It should. 
+![sysadmin_owndb](../../pics/sysadmin_owndb.png)
+
+> Review previous lesson labs if your databases page doesn't look like this. When you have confirmed your databases, click the [Mark as Complete] button below. 
+
+## Roles And Database Visibility 
+
+>As public view.
+![view_as_public](../../pics/view_as_public.png)
+
+>1. View the list of Databases.
+>2. Change your role. 
+>3. Notice that for some roles, not all 4 databases are visible. 
+
+> NOTE: Many times when using Snowflake, something might seem to disappear. You may see a "Does Not Exist error" when you know that the item in question has been created. In those instances, you should begin by checking your role!!
+
+## Roles And Warehouse Visibility
+
+### 📓 How Does Changing Your Role Affect What Warehouses You Can See? 
+
+![warehouses](../../pics/warehouses.png)
+
+> 1. Start with your role set to ACCOUNTADMIN. 
+> 2. Navigate to the Warehouses page. 
+> 3. View a warehouse added to your trial for you. 
+> 4. Change ROLE other roles, notice no warehouses are listed.
+
+### 🎯 CHALLENGE LAB: Make the Warehouse Available to SYSADMIN 
+
+> There are different ways to make a compute resource available to different roles, but as we saw with databases, sometimes the easiest way to grant access is to transfer ownership to a lower role and let higher roles "inherit" it (use it via custodial oversight).
+
+> Give the SYSADMIN role access to the COMPUTE_WH. 
+
+![wh_to_sysadmin](../../pics/wh_to_sysadmin.png)
+
+
+### 🏁 Are You Ready for Lesson 3? 
+
+If you: 
+
+Can switch between roles on the HOME page 
+Can see and use the COMPUTE_WH warehouse while in the SYSADMIN role
+Can name the first rule of troubleshooting in Snowflake ("Check your ____")  "ROLES"
+You are ready for Lesson 3!
