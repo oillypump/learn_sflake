@@ -40,3 +40,23 @@ Don't sign up for a trial account until you are given step-by-step instructions 
 [Lesson 3 : Data Containers](lesson3_Data_Containers/readme.md)
 
 [Lesson 4 : Tables, Data Types, and Loading Data](lesson4_Tables_Data_Types_and_Loading_Data/readme.md)
+
+[Lesson 5 : Worksheet & Warehouses](lesson5_Worksheet_Warehouses/readme.md)
+
+
+Lesson 6: File Formats & the Load Wizard
+Lesson 7: Meet DORA!
+Lesson 8: Staging Data
+Lesson 9: Data Storage Structures
+Lesson 10: Intro to Semi-Structured Data
+Lesson 11: Nested Semi-Structured Data
+Wrapping Up
+Course  Lesson 5: Worksheets & Warehouses  🎭 Tsai Tells the Team About Worksheets & Warehouses  ▪️
+Important! 
+This section is a prerequisite. You must complete this section in order to unlock additional content.
+
+ Previous
+Next 
+problem ▪️ 
+ Bookmark this page
+🎭
